@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3BWZ5huzD6MV9SQaA/KaYFo+RfjJhYeA8WXvJAkDgQe+sl2Vu0yTYG/Y3qgqljeH+ZPn6ve0g/G7Ma+QOWmkQ==",
+  "dgSpecHash": "AIWHM9XgHCgOD/jX9ATgEq/TmNjiIeMnesvwwHAAb9nQaUIfPt32/3hb03HMUBUzjhjdNB9VuNRcuVyBkytqHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\MauiAppNotificationNew.csproj",
+  "projectFilePath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\MauiAppNotificationNew.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jsanda\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\jsanda\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",

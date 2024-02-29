@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\MauiAppNotificationNew.csproj": {}
+    "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\MauiAppNotificationNew.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\MauiAppNotificationNew.csproj": {
+    "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\MauiAppNotificationNew.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\MauiAppNotificationNew.csproj",
+        "projectUniqueName": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\MauiAppNotificationNew.csproj",
         "projectName": "MauiAppNotificationNew",
-        "projectPath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\MauiAppNotificationNew.csproj",
+        "projectPath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\MauiAppNotificationNew.csproj",
         "packagesPath": "C:\\Users\\jsanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\obj\\",
+        "outputPath": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

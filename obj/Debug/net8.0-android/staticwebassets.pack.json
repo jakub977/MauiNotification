@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MauiAppNotificationNew.styles.css",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\MauiAppNotificationNew.styles.css",
       "PackagePath": "staticwebassets\\MauiAppNotificationNew.styles.css"
     },
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\index.html",
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotification\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
