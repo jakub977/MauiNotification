@@ -1,0 +1,48 @@
+﻿@inherits LayoutComponentBase
+
+@inject NavigationManager nav;
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+
+
+@code{
+
+    protected override void OnInitialized()
+    {
+        // Check if a NavigationID is stored in the preferences
+        if (Preferences.ContainsKey("NavigationID")) 
+        {
+            // Retrieve the NavigationID from preferences
+            string id = Preferences.Get("NavigationID", "");
+            if (id == "1")  // Navigate to a page based on the NavigationID
+            {
+                nav.NavigateTo("/"); // Navigate to the home page
+            }
+            else if (id == "2")
+            {
+                nav.NavigateTo("/counter"); // Navigate to the counter page
+            }
+            else if (id == "3")
+            {
+                nav.NavigateTo("/weather"); // Navigate to the weather page
+            }
+            // Remove the stored NavigationID from preferences
+            Preferences.Remove("id");
+        }
+    }
+}

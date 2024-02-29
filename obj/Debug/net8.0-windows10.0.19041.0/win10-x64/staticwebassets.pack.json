@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiAppNotificationNew.styles.css",
+      "PackagePath": "staticwebassets\\MauiAppNotificationNew.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\jsanda\\OneDrive - Principal engineering s.r.o\\Plocha\\MauiNotificationANDROID\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.MauiAppNotificationNew.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.MauiAppNotificationNew.props",
+      "PackagePath": "build\\MauiAppNotificationNew.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.MauiAppNotificationNew.props",
+      "PackagePath": "buildMultiTargeting\\MauiAppNotificationNew.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.MauiAppNotificationNew.props",
+      "PackagePath": "buildTransitive\\MauiAppNotificationNew.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,16 @@
+﻿@page "/"
+@using MauiAppNotificationNew.Platforms.Android.Services
+
+<h1>Notification sender</h1>
+
+<p role="status">Click to send notification!</p>
+
+<button class="btn btn-success" @onclick="SendNotification"> Send notification! </button>
+
+@code {
+
+    private void SendNotification()
+    {
+        Utility.CallNotificationMethod(); // Calls a method to send notification.
+    }
+}
