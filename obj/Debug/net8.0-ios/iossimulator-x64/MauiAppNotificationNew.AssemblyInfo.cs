@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MauiAppNotificationNew")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cb68d76c7b7dd283f0e4e65be44a60392c0840c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+69e2dd6c5a66807c84acae6f7ea88983b681bf7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MauiAppNotificationNew")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MauiAppNotificationNew")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

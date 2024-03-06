@@ -49,7 +49,7 @@ namespace MauiAppNotificationNew
             // Send push notification using HttpClient
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "AAAAotnwCQo:APA91bFr7jgIV3qFFh4PU4STqBQUK_TDzckT5ByxQXwfVZda4-yAiSJM4ChcSzCCx6c6VvtByYTQ-MDQRL62Kp35P1J_TotRDG2nOctlCBiCXrhEL0noac3kAajTIJjfAo85BHB_efAm");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "");
 
                 // Serialize the push notification request
                 string serializeRequest = JsonConvert.SerializeObject(pushNotificationRequest);
