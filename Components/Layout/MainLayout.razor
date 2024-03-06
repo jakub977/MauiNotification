@@ -1,4 +1,6 @@
-﻿@inherits LayoutComponentBase
+﻿@using CommunityToolkit.Mvvm.Messaging
+@using MauiAppNotificationNew.Models
+@inherits LayoutComponentBase
 
 @inject NavigationManager nav;
 
@@ -8,10 +10,6 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
         <article class="content px-4">
             @Body
         </article>
@@ -20,29 +18,49 @@
 
 
 
-@code{
+@code {
+
+    private string? id { get; set; } // Parameter to assign NavigationID value
+
+
+    // Methods
 
     protected override void OnInitialized()
     {
-        // Check if a NavigationID is stored in the preferences
-        if (Preferences.ContainsKey("NavigationID")) 
+        // Called on notification recieved
+        WeakReferenceMessenger.Default.Register<PushNotificationReceived>(this, (r, m) =>
         {
-            // Retrieve the NavigationID from preferences
-            string id = Preferences.Get("NavigationID", "");
-            if (id == "1")  // Navigate to a page based on the NavigationID
-            {
-                nav.NavigateTo("/"); // Navigate to the home page
-            }
-            else if (id == "2")
-            {
-                nav.NavigateTo("/counter"); // Navigate to the counter page
-            }
-            else if (id == "3")
-            {
-                nav.NavigateTo("/weather"); // Navigate to the weather page
-            }
-            // Remove the stored NavigationID from preferences
-            Preferences.Remove("id");
+            string msg = m.Value;
+
+            // Calls the NavigateToPage method to navigate to page according to the NavigationID specified in notification parameter
+            NavigateToPage(); 
+        });
+
+        // Calls the NavigateToPage method to navigate to page according to the NavigationID specified in notification parameter
+        NavigateToPage();
+    }
+
+    // Method to handle navigation to pages according to the NavigationID specified in notification parameter
+    public void NavigateToPage()
+    {
+        // Retrieve the NavigationID from preferences
+        string id = Preferences.Get("NavigationID", "");
+
+        if (id == "1")  // Navigate to a page based on the NavigationID
+        {
+            nav.NavigateTo("/"); // Navigate to the home page
         }
+        else if (id == "2")
+        {
+            nav.NavigateTo("/counter"); // Navigate to the counter page
+        }
+        else if (id == "3")
+        {
+            nav.NavigateTo("/weather"); // Navigate to the weather page
+        }
+
+        // Removes the NavigationID and id values, so it will open main page if there is no notification.
+        Preferences.Remove("NavigationID");
+        Preferences.Remove("id");
     }
 }

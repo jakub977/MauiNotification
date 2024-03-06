@@ -14,6 +14,11 @@ namespace MauiAppNotificationNew.Platforms.Android.Services
         {
             // Constructor for FirebaseService
         }
+
+        /// <summary>
+        /// Method called on new token, when the app is opened
+        /// </summary>
+        /// <param name="token"></param>
         public override void OnNewToken(string token)
         {
             base.OnNewToken(token);
@@ -26,6 +31,10 @@ namespace MauiAppNotificationNew.Platforms.Android.Services
             Preferences.Set("DeviceToken", token);
         }
 
+        /// <summary>
+        /// Method called on message recieved which retrieves the notification
+        /// </summary>
+        /// <param name="message"></param>
         public override void OnMessageReceived(RemoteMessage message)
         {
             base.OnMessageReceived(message);
@@ -37,11 +46,18 @@ namespace MauiAppNotificationNew.Platforms.Android.Services
             SendNotification(notification.Body, notification.Title, message.Data);
         }
 
+        /// <summary>
+        /// Method to send notification
+        /// </summary>
+        /// <param name="messageBody"></param>
+        /// <param name="title"></param>
+        /// <param name="data"></param>
         private void SendNotification(string messageBody, string title, IDictionary<string, string> data)
         {
             // Create an intent to launch the main activity
             var intent = new Intent(this, typeof(MainActivity));
             intent.AddFlags(ActivityFlags.ClearTop);
+            intent.AddFlags(ActivityFlags.SingleTop); // Make sure the app does not open new activity when clicked on Notification and so the app just redirects to the page the Notification leads to.
 
             // Add data from the notification to the intent
             foreach (var key in data.Keys)
@@ -61,7 +77,8 @@ namespace MauiAppNotificationNew.Platforms.Android.Services
                 .SetContentText(messageBody)
                 .SetChannelId(MainActivity.Channel_ID)
                 .SetContentIntent(pendingIntent)
-                .SetPriority((int)NotificationPriority.Max);
+                .SetPriority((int)NotificationPriority.Max)
+                .SetAutoCancel(true);
 
             // Notify the notification manager to display the notification
             var notificationManager = NotificationManagerCompat.From(this);

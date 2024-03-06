@@ -110,6 +110,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.ViewPager2.dll",
 		"Xamarin.AndroidX.Window.dll",
 		"Xamarin.AndroidX.Window.Extensions.Core.Core.dll",
+		"Xamarin.Essentials.dll",
 		"Xamarin.Firebase.Annotations.dll",
 		"Xamarin.Firebase.Common.dll",
 		"Xamarin.Firebase.Common.Ktx.dll",

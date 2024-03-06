@@ -1,4 +1,7 @@
-﻿namespace MauiAppNotificationNew
+﻿using MauiAppNotificationNew.Components.Layout;
+using Microsoft.Maui.Controls;
+
+namespace MauiAppNotificationNew
 {
     public partial class App : Application
     {

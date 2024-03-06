@@ -4,5 +4,47 @@
         <name>MauiAppNotificationNew</name>
     </assembly>
     <members>
+        <member name="M:MauiAppNotificationNew.MainPage.SendNotification">
+            <summary>
+            Method to manually send notification
+            </summary>
+        </member>
+        <member name="M:MauiAppNotificationNew.MainActivity.OnCreate(Android.OS.Bundle)">
+            <summary>
+            Method to set NavigationID from Intent key upon starting application 
+            </summary>
+            <param name="savedInstanceState"></param>
+        </member>
+        <member name="M:MauiAppNotificationNew.MainActivity.OnNewIntent(Android.Content.Intent)">
+            <summary>
+            Method to set NavigationID from Intent key upon new notification recieved 
+            </summary>
+            <param name="intent"></param>
+        </member>
+        <member name="M:MauiAppNotificationNew.MainActivity.CreateNotificationChannel">
+            <summary>
+            Method creating Notification Channel
+            </summary>
+        </member>
+        <member name="M:MauiAppNotificationNew.Platforms.Android.Services.FirebaseService.OnNewToken(System.String)">
+            <summary>
+            Method called on new token, when the app is opened
+            </summary>
+            <param name="token"></param>
+        </member>
+        <member name="M:MauiAppNotificationNew.Platforms.Android.Services.FirebaseService.OnMessageReceived(Firebase.Messaging.RemoteMessage)">
+            <summary>
+            Method called on message recieved which retrieves the notification
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:MauiAppNotificationNew.Platforms.Android.Services.FirebaseService.SendNotification(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Method to send notification
+            </summary>
+            <param name="messageBody"></param>
+            <param name="title"></param>
+            <param name="data"></param>
+        </member>
     </members>
 </doc>

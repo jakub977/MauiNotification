@@ -1,6 +1,6 @@
-﻿using MauiAppNotificationNew.Components.Pages;
+﻿using CommunityToolkit.Mvvm.Messaging;
+using MauiAppNotificationNew.Components.Layout;
 using MauiAppNotificationNew.Models;
-using Microsoft.AspNetCore.Components;
 using Newtonsoft.Json;
 using System.Text;
 
@@ -9,44 +9,27 @@ namespace MauiAppNotificationNew
 {
     public partial class MainPage : ContentPage
     {
-        //[Inject]
-        //private NavigationManager? _navigation { get; set; }
-
         private string? _deviceToken;
 
         public MainPage()
         {
             InitializeComponent();
 
+            // Checks if Preferences contains DeviceToken
             if (Preferences.ContainsKey("DeviceToken"))
             {
                 _deviceToken = Preferences.Get("DeviceToken", ""); // Retrieve the device token from preferences
             }
-
-            //if (Preferences.ContainsKey("NavigationID"))
-            //{
-            //    string id = Preferences.Get("NavigationID", "");
-            //    if (id == "1")
-            //    {
-            //        _navigation?.NavigateTo("/counter");
-            //    }
-            //    else if (id == "2")
-            //    {
-            //        _navigation?.NavigateTo("/counter");
-            //    }
-            //    else if (id == "3")
-            //    {
-            //        _navigation?.NavigateTo("/weather");
-            //    }
-            //    Preferences.Remove("id");
-            //}
         }
 
-        public async void OnCounterClicked()
+        /// <summary>
+        /// Method to manually send notification
+        /// </summary>
+        public async void SendNotification()
         {
             // Handle the counter button click event
             var androidNotificationObject = new Dictionary<string, string>();
-            androidNotificationObject.Add("NavigationID", "1"); // Navigation ID to decide which page will be navigated upon Notification clicking.
+            androidNotificationObject.Add("NavigationID", "2"); // Navigation ID to decide which app will be navigated upon Notification clicking.
 
             // Create a push notification request
             var pushNotificationRequest = new PushNotificationRequest
@@ -66,7 +49,7 @@ namespace MauiAppNotificationNew
             // Send push notification using HttpClient
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "");
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("key", "=" + "AAAAotnwCQo:APA91bFr7jgIV3qFFh4PU4STqBQUK_TDzckT5ByxQXwfVZda4-yAiSJM4ChcSzCCx6c6VvtByYTQ-MDQRL62Kp35P1J_TotRDG2nOctlCBiCXrhEL0noac3kAajTIJjfAo85BHB_efAm");
 
                 // Serialize the push notification request
                 string serializeRequest = JsonConvert.SerializeObject(pushNotificationRequest);

@@ -67,7 +67,7 @@
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -75,11 +75,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -94,6 +94,10 @@
             "Xamarin.AndroidX.Collection.Ktx": {
               "target": "Package",
               "version": "[1.4.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             },
             "Xamarin.Firebase.Messaging": {
               "target": "Package",
@@ -138,7 +142,7 @@
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -146,11 +150,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -161,6 +165,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             }
           },
           "imports": [
@@ -193,7 +201,7 @@
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -201,11 +209,11 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -216,6 +224,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             }
           },
           "imports": [
@@ -249,7 +261,7 @@
             },
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -257,15 +269,19 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.3, )"
+              "version": "[8.0.7, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             }
           },
           "imports": [

@@ -5,12 +5,14 @@
 
 <p role="status">Click to send notification!</p>
 
-<button class="btn btn-success" @onclick="SendNotification"> Send notification! </button>
+<button class="btn btn-success" @onclick="CallSendNotificationMethod"> Send notification! </button>
 
 @code {
 
-    private void SendNotification()
+    // Method calling SendNotification method in MainPage.xaml.cs
+    private void CallSendNotificationMethod()
     {
-        Utility.CallNotificationMethod(); // Calls a method to send notification.
+        var mainPage = new MainPage();
+        mainPage.SendNotification();
     }
 }

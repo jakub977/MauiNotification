@@ -13,29 +13,8 @@
 <!-- See the License for the specific language governing permissions and -->
 <!-- limitations under the License. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.firebase" >
-
-    <uses-sdk android:minSdkVersion="14" />
-    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    package="com.google.firebase.components" > <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
-    <application>
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="${applicationId}.firebaseinitprovider"
-            android:directBootAware="true"
-            android:exported="false"
-            android:initOrder="100" />
-
-        <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:directBootAware="true"
-            android:exported="false"
-            tools:targetApi="n" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
-    </application>
+    <uses-sdk android:minSdkVersion="14" />
 
 </manifest>
